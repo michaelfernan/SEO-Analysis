@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SEO Técnico</h1>
+        </header>
+        <main>
+            <section id="analyze">
+                <h2>Faça sua análise</h2>
+                <form id="analyze-form" method="POST" action="/analyze">
+                    <label for="url">Digite a URL do site:</label>
+                    <input type="url" id="url" name="url" required placeholder="https://example.com">
+                    <button type="submit">Analisar</button>
+                </form>
+                <div class="loader-overlay" id="loader" style="display: none;">
+                    <div class="loader"></div>
+                </div>
+
+
+                <form id="formBtnPdf" style="display: none;">
+                    <button type="button" class="export-button" id="pdf_button" style="margin-top: 20px;">
+                        Exportar PDF
+                    </button>
+
+                    <div id="pdf_loader" class=" export-button"
+                        style="display: none; margin-left: 0px; margin: 0px; margin-top: 70px; background: none;  box-shadow: none;  ">
+                        <div class="loaders">
+                            <div class="loading-text">
+                                Gerando pdf<span class="dot">.</span><span class="dot">.</span><span
+                                    class="dot">.</span>
+                            </div>
+                            <div class="loading-bar-background">
+                                <div class="loading-bar">
+                                    <div class="white-bars-container">
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                        <div class="white-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div id="result">
+                    <div id="titulo"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Ferramenta de SEO</p>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts.js" defer></script>
+
+</html>

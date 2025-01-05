@@ -1,0 +1,12 @@
+# Chaves das APIs (exemplo)
+GOOGLE_API_KEY=your-google-api-key-here
+MOZ_API_KEY=your-moz-api-key-here
+OPENGRAPH_API_KEY=your-opengraph-api-key-here
+SERPSTACK_API_KEY=your-serpstack-api-key-here
+
+# Configurações do Banco de Dados (exemplo)
+DB_HOST=your-db-host
+DB_PORT=your-db-port
+DB_DATABASE=your-database-name
+DB_USERNAME=your-username
+DB_PASSWORD=your-password
